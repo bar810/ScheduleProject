@@ -15,6 +15,6 @@ public class exit implements Command {
 	@Override
 	public void doCommand(String[] args) {
 
-		v.Print("\nShutdown the program. thank you \n");
+		v.Print("\n Shutdown the program. thank you \n");
 	}
 }
