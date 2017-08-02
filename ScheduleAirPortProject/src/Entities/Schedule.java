@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Schedule {
 
-	ArrayList<Worker> workers;
-	String[] schedule;
-	String name;
+	public ArrayList<Worker> workers;
+	public String[] schedule;
+	public String name;
 
 	public Schedule(String name, ArrayList<Worker> workers) {
 		this.name = name;
@@ -110,6 +110,9 @@ public class Schedule {
 	}
 
 	void displaySchedule() {
+		System.out.println("Shedule:   " + this.name + " :");
+		System.out.println();
+		System.out.println();
 		for (int i = 0; i < 14; i++)
 			if (this.schedule[i] == null)
 				this.schedule[i] = "         ";
@@ -119,31 +122,31 @@ public class Schedule {
 		System.out.println("-----------------------------------------");
 		System.out.println("-----------------------------------------");
 		System.out.println("|            |            |             |");
-		System.out.println("|  SunDay    |  " + schedule[0] + " |  " + schedule[1] + "  |");
+		System.out.println("|  SunDay    |  " + this.schedule[0] + " |  " + this.schedule[1] + "  |");
 		System.out.println("|            |            |             |");
 		System.out.println("-----------------------------------------");
 		System.out.println("|            |            |             |");
-		System.out.println("|  MonDay    |  " + schedule[2] + " |  " + schedule[3] + "  |");
+		System.out.println("|  MonDay    |  " + this.schedule[2] + " |  " + this.schedule[3] + "  |");
 		System.out.println("|            |            |             |");
 		System.out.println("-----------------------------------------");
 		System.out.println("|            |            |             |");
-		System.out.println("|  TuesDay   |  " + schedule[4] + " |  " + schedule[5] + "  |");
+		System.out.println("|  TuesDay   |  " + this.schedule[4] + " |  " + this.schedule[5] + "  |");
 		System.out.println("|            |            |             |");
 		System.out.println("-----------------------------------------");
 		System.out.println("|            |            |             |");
-		System.out.println("|  WednesDay |  " + schedule[6] + " |  " + schedule[7] + "  |");
+		System.out.println("|  WednesDay |  " + this.schedule[6] + " |  " + this.schedule[7] + "  |");
 		System.out.println("|            |            |             |");
 		System.out.println("-----------------------------------------");
 		System.out.println("|            |            |             |");
-		System.out.println("|  ThursDay  |  " + schedule[8] + " |  " + schedule[9] + "  |");
+		System.out.println("|  ThursDay  |  " + this.schedule[8] + " |  " + this.schedule[9] + "  |");
 		System.out.println("|            |            |             |");
 		System.out.println("-----------------------------------------");
 		System.out.println("|            |            |             |");
-		System.out.println("|   FriDay   |  " + schedule[10] + " |  " + schedule[11] + "  |");
+		System.out.println("|   FriDay   |  " + this.schedule[10] + " |  " + this.schedule[11] + "  |");
 		System.out.println("|            |            |             |");
 		System.out.println("-----------------------------------------");
 		System.out.println("|            |            |             |");
-		System.out.println("|  SaturDay  |  " + schedule[12] + " |  " + schedule[13] + "  |");
+		System.out.println("|  SaturDay  |  " + this.schedule[12] + " |  " + this.schedule[13] + "  |");
 		System.out.println("|            |            |             |");
 		System.out.println("-----------------------------------------");
 	}

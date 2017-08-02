@@ -26,9 +26,9 @@ public class Run {
 		model = new MyModel();
 
 		view = new MyView(in, out);
-		Presenter presenter1 = new Presenter(model, view);
-		view.addObserver(presenter1);
-		model.addObserver(presenter1);
+		Presenter presenter = new Presenter(model, view);
+		view.addObserver(presenter);
+		model.addObserver(presenter);
 		view.start();
 
 	}

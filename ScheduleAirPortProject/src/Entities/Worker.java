@@ -12,7 +12,7 @@ public class Worker {
 		this.limits = new int[14];
 	}
 
-	int getPercentOfJobs() {
+	public int getPercentOfJobs() {
 		return this.percentOfJobs;
 	}
 
@@ -42,4 +42,9 @@ public class Worker {
 	Boolean canIWork(int shift){
 		return this.limits[shift]==0;
 	}
+	
+	public String getName(){
+		return this.name;
+	}
+	
 }

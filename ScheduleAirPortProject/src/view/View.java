@@ -1,5 +1,7 @@
 package view;
 
+import Entities.Schedule;
+
 /**
  * view interface- all the view's classes will implements this class and
  * override those functions
@@ -13,4 +15,6 @@ public interface View {
 	public void Print(String str);
 
 	public void displayMessage(String msg);
+
+
 }

@@ -5,6 +5,8 @@ import java.io.PrintWriter;
 import java.util.Observable;
 import java.util.Observer;
 
+import Entities.Schedule;
+
 public class MyView extends Observable implements View, Observer {
 	CLI cli;
 	private BufferedReader reader;
@@ -53,5 +55,6 @@ public class MyView extends Observable implements View, Observer {
 		}
 
 	}
+	
 
 }

@@ -29,8 +29,11 @@ public class Presenter extends Observable implements Observer {
 		commands = new HashMap<String, Command>();
 		// add commands here:
 		commands.put("exit", new exit(view, model));
-		;
-
+		commands.put("new_shedule", new newSchedule(view, model));
+		commands.put("new_worker", new newWorker(view, model));
+		commands.put("print_all", new printAll(view, model));
+		commands.put("delete_worker", new deleteWorker(view, model));
+	
 	}
 
 	@Override
